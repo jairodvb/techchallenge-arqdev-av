@@ -1,0 +1,23 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+# 1. Instalar Terraform
+- task: TerraformInstaller@0
+  inputs:
+    terraformVersion: '1.9.8'   # ajusta a la versión que uses
+
+# 2. Inicializar Terraform en la carpeta de dev
+- script: terraform -chdir=envs/dev init
+  displayName: 'Terraform Init'
+
+# 3. Validar sintaxis y configuraciones
+- script: terraform -chdir=envs/dev validate
+  displayName: 'Terraform Validate'
+
+# 4. Generar plan de ejecución (sin aplicar)
+- script: terraform -chdir=envs/dev plan -out=tfplan
+  displayName: 'Terraform Plan'

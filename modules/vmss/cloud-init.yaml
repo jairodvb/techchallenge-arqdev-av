@@ -1,0 +1,8 @@
+#cloud-config
+package_update: true
+packages:
+  - nginx
+runcmd:
+  - echo 'Esta es mi prueba de terraform ya completada' | sudo tee /var/www/html/index.html
+  - sudo systemctl enable nginx
+  - sudo systemctl restart nginx

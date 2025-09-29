@@ -1,0 +1,56 @@
+{
+  "version": 4,
+  "terraform_version": "1.4.5",
+  "serial": 13,
+  "lineage": "5b19f5f2-0e77-26d6-6fcb-f987c9ebff27",
+  "outputs": {},
+  "resources": [
+    {
+      "module": "module.network",
+      "mode": "managed",
+      "type": "azurerm_resource_group",
+      "name": "rg",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/6e2f4a6c-817d-4747-96e0-32a1dc328a3f/resourceGroups/rg-dev",
+            "location": "eastus2",
+            "managed_by": "",
+            "name": "rg-dev",
+            "tags": {},
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjo1NDAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    },
+    {
+      "module": "module.network",
+      "mode": "managed",
+      "type": "azurerm_subnet",
+      "name": "appgw",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": []
+    },
+    {
+      "module": "module.network",
+      "mode": "managed",
+      "type": "azurerm_subnet",
+      "name": "vmss",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": []
+    },
+    {
+      "module": "module.vmss",
+      "mode": "managed",
+      "type": "azurerm_linux_virtual_machine_scale_set",
+      "name": "vmss",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": []
+    }
+  ],
+  "check_results": null
+}
