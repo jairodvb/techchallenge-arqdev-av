@@ -1,7 +1,35 @@
-# Terraform
+# --- Terraform ---
 *.tfstate
 *.tfstate.*
 *.tfplan
-.crash
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Lock y cache (no necesarios en repo)
 .terraform/
 .terraform.lock.hcl
+
+# --- Credenciales / Llaves ---
+*.pem
+*.key
+*.pfx
+*.cer
+*.crt
+*.pub
+
+# --- Archivos de sistema ---
+.DS_Store
+Thumbs.db
+
+# --- VSCode ---
+.vscode/
+.history/
+*.code-workspace
+
+# --- Logs y temporales ---
+*.log
+*.tmp
+*.bak

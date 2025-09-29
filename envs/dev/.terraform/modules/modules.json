@@ -1,1 +1,0 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"autoscale","Source":"../../modules/autoscale","Dir":"../../modules/autoscale"},{"Key":"lb","Source":"../../modules/lb","Dir":"../../modules/lb"},{"Key":"network","Source":"../../modules/network","Dir":"../../modules/network"},{"Key":"vmss","Source":"../../modules/vmss","Dir":"../../modules/vmss"}]}
